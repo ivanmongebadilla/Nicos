@@ -1,0 +1,41 @@
+
+
+$font-primary: "Lato", sans-serif;
+$font_header: "Lalezar", system-ui;
+$font_title: "Lalezar", system-ui;
+
+// $color-one: #C62828;
+// $color-two: #FFFFFF;
+// $color-three: #FFD54F;
+// $color-four: #2E7D32;
+// $color-five: #FF7043;
+// $color-six: #424242;
+
+
+$color-one: #ff0000;
+$color-two: #FBD733;
+$color-three: #ed8205;
+$color-four: #ff914d;
+$color-five: #503939;
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    // font-family: 'Bebas Neue', sans-serif;
+    font-size: 62.5%; //1rem = 10px
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: $font-primary;
+    font-weight: 300;
+    // background-color: black;
+  }
+
+//   section{
+//     padding: 50px;
+//   }
