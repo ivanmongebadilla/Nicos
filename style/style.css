@@ -47,11 +47,17 @@ body {
     font-family: "Lalezar", system-ui;
     color: #ff0000; }
 
+.section_title {
+  color: white;
+  font-family: "Lalezar", system-ui;
+  margin: 0;
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px #503939; }
+
 .intro {
-  width: 100vw;
-  height: auto;
-  background-color: #ff0000; }
+  padding: 0 1.5rem 0 1.5rem; }
   .intro_container {
+    background-color: #ff0000;
     display: flex;
     flex-wrap: wrap; }
     .intro_container_right {
@@ -98,63 +104,104 @@ body {
         .header_container_left-container span {
           font-size: 1.5rem; }
 
-.history_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #FBD733; }
-  .history_container_left {
-    flex: 1;
-    text-align: center; }
-    .history_container_left h2 {
+.history {
+  padding: 0 1.5rem 0 1.5rem; }
+  .history_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FBD733; }
+    .history_container_left {
+      flex: 1;
+      text-align: center; }
+      .history_container_left h2 {
+        color: white;
+        font-family: "Lalezar", system-ui;
+        margin: 0;
+        margin-top: 1rem;
+        font-size: 6rem;
+        text-shadow: 2px 2px 5px #503939; }
+      .history_container_left_container {
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
+    .history_container_right {
+      flex: 1;
+      align-self: center;
+      text-align: center; }
+      .history_container_right_img {
+        margin: auto;
+        overflow: hidden;
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #2c2c2c;
+        transform: rotate(-5deg); }
+  .history_text {
+    font-size: 2rem;
+    margin: auto;
+    padding: 2rem;
+    font-weight: bold;
+    color: white; }
+  .history_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .history_image {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%; }
+
+.locations {
+  padding: 0 1.5rem 0 1.5rem; }
+  .locations_container {
+    background-color: #ff0000;
+    text-align: center;
+    overflow-x: hidden; }
+    .locations_container h2 {
       color: white;
       font-family: "Lalezar", system-ui;
       margin: 0;
-      margin-top: 1rem;
       font-size: 6rem;
       text-shadow: 2px 2px 5px #503939; }
-    .history_container_left_container {
-      padding-top: 0.5rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem; }
-  .history_container_right {
-    flex: 1;
-    align-self: center;
-    text-align: center; }
-    .history_container_right_img {
-      margin: auto;
-      overflow: hidden;
-      width: 80%;
-      height: 80%;
-      border-radius: 10px;
-      box-shadow: 5px 5px 5px #2c2c2c;
-      transform: rotate(-5deg); }
+    .locations_container_cards {
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 5rem; }
+      .locations_container_cards-card {
+        max-width: 20rem;
+        height: 22rem;
+        flex: 1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 5px 5px 5px #2c2c2c; }
+        .locations_container_cards-card h3 {
+          font-family: "Lalezar", system-ui;
+          font-size: 4rem;
+          margin: 0;
+          line-height: 1; }
+        .locations_container_cards-card p {
+          font-size: 2rem;
+          margin: 0; }
+        .locations_container_cards-card button {
+          padding: 10px;
+          margin: auto;
+          margin-bottom: 5px;
+          margin-top: 20px;
+          font-size: 2rem; }
 
-.history_text {
-  font-size: 2rem;
-  margin: auto;
-  padding: 2rem;
-  font-weight: bold;
-  color: white; }
+.card-1 {
+  background: linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)), url("../resources/casagrande1.jpg") no-repeat center/cover; }
 
-.history_video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+.gallery {
+  padding: 0 1.5rem 0 1.5rem; }
+  .gallery_container {
+    background-color: #FBD733; }
 
-.history_image {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%; }
-
-.locations_container {
-  width: 100vw;
-  background-color: #ff0000;
-  text-align: center; }
-  .locations_container h2 {
-    color: white;
-    font-family: "Lalezar", system-ui;
-    margin: 0;
-    margin-top: 1rem;
-    font-size: 6rem;
-    text-shadow: 2px 2px 5px #503939; }
+.recognitions {
+  padding: 0 1.5rem 0 1.5rem; }
+  .recognitions_container {
+    text-align: right;
+    background-color: #ff0000; }

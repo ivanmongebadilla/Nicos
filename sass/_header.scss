@@ -1,11 +1,12 @@
 
 .intro {
-   width: 100vw;
-   // height: 85vh;
-   height: auto;
-   background-color: $color-one;
+   // width: 100vw;
+   // height: auto;
+   // background-color: $color-one;
+   padding: 0 1.5rem 0 1.5rem;
 
    &_container {
+      background-color: $color-one;
       display: flex;
       flex-wrap: wrap;
 
