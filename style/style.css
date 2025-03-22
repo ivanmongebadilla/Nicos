@@ -9,7 +9,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  background-color: #fafaad; }
 
 .carousel {
   position: relative;
@@ -31,21 +32,25 @@ body {
 .carousel img.active {
   opacity: 1; }
 
-.space_container {
-  position: relative;
-  width: 100vw;
-  height: 5rem;
-  background-color: white;
-  text-align: center; }
-  .space_container h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 2.3rem;
-    font-family: "Lalezar", system-ui;
-    color: #ff0000; }
+.space {
+  padding: 0 1.5rem 0 1.5rem; }
+  .space_container {
+    position: relative;
+    width: 100vw;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center; }
+    .space_container h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: 2.3rem;
+      font-family: "Lalezar", system-ui;
+      color: #ff0000;
+      animation: scroll-right 20s linear infinite;
+      /* Continuous scrolling */ }
 
 .section_title {
   color: white;
@@ -54,12 +59,38 @@ body {
   font-size: 6rem;
   text-shadow: 2px 2px 5px #503939; }
 
+.icon {
+  margin: 5px;
+  cursor: pointer; }
+
+.language {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem; }
+
+.button {
+  cursor: pointer;
+  background-color: #FBD733;
+  color: #ff0000;
+  border-radius: 16px; }
+
+/* Keyframes for right-to-left scrolling */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(100%);
+    /* Start off-screen to the right */ }
+  100% {
+    transform: translateX(-200%);
+    /* Move off-screen to the left */ } }
+
 .intro {
   padding: 0 1.5rem 0 1.5rem; }
   .intro_container {
     background-color: #ff0000;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    border-radius: 5px; }
     .intro_container_right {
       flex: 1;
       padding: 3rem;
@@ -83,18 +114,21 @@ body {
   .header_container {
     width: 100vw;
     background-color: #FBD733;
-    display: flex;
-    border-bottom: 10px;
-    border-style: solid;
-    border-color: white; }
+    display: flex; }
     .header_container_right {
-      flex: 1; }
+      flex: 1;
+      display: flex;
+      align-items: center; }
       .header_container_right h1 {
         margin: 0;
         padding: 1rem;
-        font-size: 4rem;
+        font-size: 6rem;
         font-family: "Lalezar", system-ui;
         color: white; }
+      .header_container_right img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; }
     .header_container_left {
       flex: 1;
       align-self: center; }
@@ -110,7 +144,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #FBD733; }
+    background-color: #FBD733;
+    border-radius: 5px; }
     .history_container_left {
       flex: 1;
       text-align: center; }
@@ -157,7 +192,8 @@ body {
   .locations_container {
     background-color: #ff0000;
     text-align: center;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    border-radius: 5px; }
     .locations_container h2 {
       color: white;
       font-family: "Lalezar", system-ui;
@@ -170,7 +206,6 @@ body {
       padding-bottom: 5rem; }
       .locations_container_cards-card {
         max-width: 20rem;
-        height: 22rem;
         flex: 1;
         border-radius: 5px;
         display: flex;
@@ -181,10 +216,13 @@ body {
           font-family: "Lalezar", system-ui;
           font-size: 4rem;
           margin: 0;
-          line-height: 1; }
+          line-height: 1;
+          color: #fafaad; }
         .locations_container_cards-card p {
           font-size: 2rem;
-          margin: 0; }
+          font-weight: bold;
+          margin: 0;
+          color: white; }
         .locations_container_cards-card button {
           padding: 10px;
           margin: auto;
@@ -195,6 +233,12 @@ body {
 .card-1 {
   background: linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)), url("../resources/casagrande1.jpg") no-repeat center/cover; }
 
+.card-2 {
+  background: linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)), url("../resources/casagrande2.jpg") no-repeat center/cover; }
+
+.card-3 {
+  background: linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)), url("../resources/tucsonaz.jpg") no-repeat center/cover; }
+
 .gallery {
   padding: 0 1.5rem 0 1.5rem; }
   .gallery_container {
@@ -204,4 +248,21 @@ body {
   padding: 0 1.5rem 0 1.5rem; }
   .recognitions_container {
     text-align: right;
-    background-color: #ff0000; }
+    background-color: #FBD733;
+    border-radius: 5px; }
+
+.contact_container {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+  .contact_container_left {
+    flex: 1;
+    text-align: right; }
+    .contact_container_left h2 {
+      color: white;
+      font-family: "Lalezar", system-ui;
+      margin: 0;
+      font-size: 10rem;
+      text-shadow: 2px 2px 5px #503939; }
+  .contact_container_right {
+    flex: 1; }

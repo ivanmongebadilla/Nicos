@@ -6,6 +6,7 @@
         background-color: $color-one;
         text-align: center;
         overflow-x: hidden;
+        border-radius: 5px;
 
         h2{
             color: white;
@@ -23,7 +24,7 @@
 
             &-card{
                 max-width: 20rem;
-                height: 22rem;
+                // height: 22rem;
                 flex: 1;
                 // background: 
                 //     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  /* Color overlay with opacity */
@@ -39,11 +40,14 @@
                     font-size: 4rem;
                     margin: 0;
                     line-height: 1;
+                    color: $background-color;
                 }
 
                 p{
                     font-size: 2rem;
+                    font-weight: bold;
                     margin: 0;
+                    color: white;
                 }
 
                 button{
@@ -64,4 +68,16 @@
     background: 
         linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)),  /* Color overlay with opacity */
         url('../resources/casagrande1.jpg') no-repeat center/cover; 
+}
+
+.card-2{
+    background: 
+        linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)),  /* Color overlay with opacity */
+        url('../resources/casagrande2.jpg') no-repeat center/cover; 
+}
+
+.card-3{
+    background: 
+        linear-gradient(rgba(189, 202, 115, 0.5), rgba(189, 202, 115, 0.5)),  /* Color overlay with opacity */
+        url('../resources/tucsonaz.jpg') no-repeat center/cover; 
 }

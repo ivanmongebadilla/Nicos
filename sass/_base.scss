@@ -11,7 +11,7 @@ $font_title: "Lalezar", system-ui;
 // $color-five: #FF7043;
 // $color-six: #424242;
 
-
+$background-color: rgb(250, 250, 173);
 $color-one: #ff0000;
 $color-two: #FBD733;
 $color-three: #ed8205;
@@ -33,7 +33,7 @@ $color-five: #503939;
     overflow-x: hidden;
     font-family: $font-primary;
     font-weight: 300;
-    // background-color: black;
+    background-color: $background-color;
   }
 
 //   section{

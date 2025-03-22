@@ -29,13 +29,15 @@
 }
 
 .space{
+    padding: 0 1.5rem 0 1.5rem;
+
 
     &_container{
         position: relative;
         width: 100vw;
         height: 5rem;
-        background-color: white;
-        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;  
 
         h3{
             position: absolute;
@@ -46,6 +48,9 @@
             font-size: 2.3rem;
             font-family: $font_header;
             color: $color-one;
+            // animation: scroll-right 8s linear infinite;    /* Infinite scrolling */
+
+            animation: scroll-right 20s linear infinite;  /* Continuous scrolling */
         }
     }
 }
@@ -57,5 +62,25 @@
     // margin-top: 1rem;
     font-size: 6rem;
     text-shadow: 2px 2px 5px $color-five;
+}
+
+.icon{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.language{
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.button {
+    cursor: pointer;
+    background-color: $color-two;
+    color: $color-one;
+    border-radius: 16px;
 }
 

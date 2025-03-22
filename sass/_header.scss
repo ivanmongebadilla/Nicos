@@ -9,6 +9,7 @@
       background-color: $color-one;
       display: flex;
       flex-wrap: wrap;
+      border-radius: 5px;
 
 
       &_right{
@@ -44,18 +45,25 @@
       width: 100vw;
       background-color: $color-two;
       display: flex;
-      border-bottom: 10px;
-      border-style: solid;
-      border-color: white;
+      // border-bottom: 10px;
+      // border-style: solid;
+      // border-color: white;
 
       &_right{
          flex: 1;
+         display: flex;
+         align-items: center;
          h1{
             margin: 0;
             padding: 1rem;
-            font-size: 4rem;
+            font-size: 6rem;
             font-family: $font_header;
             color: white;
+         }
+         img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
          }
       }
       
@@ -74,3 +82,13 @@
       }
    }
 }
+
+// .icon{
+//    display: inline-block;
+//    width: 50px;
+//    height: 50px;
+// }
+
+// .title{
+//    display: inline-block;
+// }
