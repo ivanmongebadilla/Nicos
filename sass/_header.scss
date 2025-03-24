@@ -11,11 +11,22 @@
       flex-wrap: wrap;
       border-radius: 5px;
 
+      @media only screen and (max-width: $bp-largest) {
+         flex-direction: column;
+     }
+
 
       &_right{
-         flex: 1;
+         // flex: 1;
          padding: 3rem;
          align-self: center;
+
+         flex-basis: 10%;
+         flex-shrink: 1;         /* Allows the text to shrink */
+
+         @media only screen and (max-width: $bp-largest) {
+            flex: 1;
+        }
          h2{
             font-size: 8rem;
             // color: $color-two;
@@ -33,6 +44,35 @@
          padding: 5rem;
          padding-top: 7rem;
          padding-bottom: 7rem;
+
+         @media only screen and (max-width: $bp-largest) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+         &-image{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgb(44, 44, 44);
+
+            transform: rotate(5deg);
+
+            img{
+               // flex-basis: 50%;       /* Make the image take half the space */
+               width: 100%;        /* Ensure it doesn't overflow */
+               height: 100%;           /* Keep the aspect ratio */
+               object-fit: cover;      /* Ensure the image fits nicely */
+               // position: absolute;
+               // top: 50%;                    /* Move the top of the div to 50% of the container */
+               // left: 50%;                   /* Move the left of the div to 50% of the container */
+               // transform: translate(-50%, -50%);
+               z-index: 1000;
+               display: block;
+            }
+         }
       }
    }
 }
@@ -50,15 +90,17 @@
       // border-color: white;
 
       &_right{
-         flex: 1;
+         flex: 5;
          display: flex;
          align-items: center;
+
          h1{
             margin: 0;
             padding: 1rem;
             font-size: 6rem;
             font-family: $font_header;
             color: white;
+            line-height: 1; 
          }
          img{
             width: 100px;
