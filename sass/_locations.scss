@@ -22,6 +22,10 @@
             justify-content: space-evenly;
             padding-bottom: 5rem;
 
+            @media only screen and (max-width: $bp-large) {
+                flex-direction: column;
+            }
+
             &-card{
                 max-width: 20rem;
                 // height: 22rem;
@@ -34,6 +38,12 @@
                 flex-direction: column;
                 justify-content: center;
                 box-shadow: 5px 5px 5px rgb(44, 44, 44);
+
+                @media only screen and (max-width: $bp-large) {
+                    min-width: 30rem;
+                    margin: auto;
+                    margin-bottom: 3rem;
+                }
 
                 h3{
                     font-family: $font_title;
@@ -55,7 +65,7 @@
                     padding: 10px;
                     margin: auto;
                     margin-bottom: 5px;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     font-size: 2rem;
                 }
             }

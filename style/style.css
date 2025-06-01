@@ -169,7 +169,7 @@ body {
         text-align: right;
         margin-right: 3rem; }
         .header_container_left-container span {
-          font-size: 1.5rem; }
+          font-size: 2rem; }
 
 .history {
   padding: 0 1.5rem 0 1.5rem; }
@@ -179,6 +179,9 @@ body {
     flex-wrap: wrap;
     background-color: #FBD733;
     border-radius: 5px; }
+    @media only screen and (max-width: 50rem) {
+      .history_container {
+        flex-direction: column; } }
     .history_container_left {
       flex: 1;
       text-align: center; }
@@ -239,6 +242,9 @@ body {
       display: flex;
       justify-content: space-evenly;
       padding-bottom: 5rem; }
+      @media only screen and (max-width: 40.625rem) {
+        .locations_container_cards {
+          flex-direction: column; } }
       .locations_container_cards-card {
         max-width: 20rem;
         flex: 1;
@@ -247,6 +253,11 @@ body {
         flex-direction: column;
         justify-content: center;
         box-shadow: 5px 5px 5px #2c2c2c; }
+        @media only screen and (max-width: 40.625rem) {
+          .locations_container_cards-card {
+            min-width: 30rem;
+            margin: auto;
+            margin-bottom: 3rem; } }
         .locations_container_cards-card h3 {
           font-family: "Lalezar", system-ui;
           font-size: 4rem;
@@ -262,7 +273,7 @@ body {
           padding: 10px;
           margin: auto;
           margin-bottom: 5px;
-          margin-top: 20px;
+          margin-top: 15px;
           font-size: 2rem; }
 
 .card-1 {
