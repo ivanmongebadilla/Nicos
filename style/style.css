@@ -91,6 +91,7 @@ body {
   padding: 0 1.5rem 0 1.5rem; }
   .intro_container {
     background-color: #ff0000;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     border-radius: 5px; }
@@ -114,6 +115,9 @@ body {
         text-align: center;
         line-height: 1;
         text-shadow: 2px 2px 5px #503939; }
+        @media only screen and (max-width: 28.125rem) {
+          .intro_container_right h2 {
+            font-size: 5rem; } }
     .intro_container_left {
       flex: 2;
       padding: 5rem;
@@ -147,6 +151,9 @@ body {
     width: 100vw;
     background-color: #FBD733;
     display: flex; }
+    @media only screen and (max-width: 28.125rem) {
+      .header_container {
+        flex-direction: column; } }
     .header_container_right {
       flex: 5;
       display: flex;
