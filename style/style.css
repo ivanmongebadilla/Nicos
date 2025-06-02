@@ -260,6 +260,20 @@ body {
         flex-direction: column;
         justify-content: center;
         box-shadow: 5px 5px 5px #2c2c2c; }
+        .locations_container_cards-card-title {
+          display: flex;
+          height: 8rem;
+          align-items: center;
+          /* vertical alignment */
+          justify-content: center;
+          /* optional: horizontal alignment */ }
+        .locations_container_cards-card-address {
+          display: flex;
+          height: 6rem;
+          align-items: center;
+          /* vertical alignment */
+          justify-content: center;
+          /* optional: horizontal alignment */ }
         @media only screen and (max-width: 40.625rem) {
           .locations_container_cards-card {
             min-width: 30rem;
