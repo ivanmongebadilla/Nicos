@@ -253,7 +253,7 @@ body {
         .locations_container_cards {
           flex-direction: column; } }
       .locations_container_cards-card {
-        max-width: 20rem;
+        max-width: 25rem;
         flex: 1;
         border-radius: 5px;
         display: flex;
