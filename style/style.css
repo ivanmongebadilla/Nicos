@@ -292,6 +292,7 @@ body {
   margin: 0;
   font-size: 6rem;
   text-shadow: 2px 2px 5px #503939;
+  line-height: 1;
 }
 .locations_container_cards {
   display: flex;
