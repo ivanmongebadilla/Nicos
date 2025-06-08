@@ -115,6 +115,7 @@ body {
   }
 }
 .intro_container_right {
+  flex: 1;
   padding: 3rem;
   align-self: center;
   flex-basis: 10%;
@@ -140,7 +141,7 @@ body {
   }
 }
 .intro_container_left {
-  flex: 2;
+  flex: 1.7;
   padding: 5rem;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -229,6 +230,7 @@ body {
 .history_container_left {
   flex: 1;
   text-align: center;
+  align-self: center;
 }
 .history_container_left h2 {
   color: white;
@@ -321,6 +323,8 @@ body {
 }
 .locations_container_cards-card-address {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   height: 6rem;
   align-items: center; /* vertical alignment */
   justify-content: center; /* optional: horizontal alignment */

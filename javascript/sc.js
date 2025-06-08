@@ -4,19 +4,19 @@ let index = 0;
 //JSON for EN / ES
 const translation = {
     en: {
-        intro: "Fresh Mexican Cuisine from the American Southwest",
+        intro: "Delicious Mexican food Since 1982 Order & pick up!",
         history: "What started as a small independent restaurant, has transformed into a popular family business. Nico’s was founded by Nicolas Moran Carreon in San Diego, and in 1993, his brother Prieto opened the first Nico’s in Arizona. Today, 23 locations can be found scattered across San Diego and Arizona. In 2023, the very first Nico’s international location opened its doors in Eindhoven. All locations are run by the children and grandchildren of Nicolas and his brothers and sisters. And business continues to grow; but make no mistake, Nico’s is not a chain or franchise (at least for now).",
         follow: "Follow Us",
         historyTitle: "Our History",
         locationTitle: "Our Locations",
         galleryTitle: "Gallery",
-        annoucment1: "Breakfast is serve ALL DAY, EVERY DAYS!☀️🍳",
+        announcemet1: "Breakfast is serve ALL DAY, EVERY DAYS!☀️🍳",
         announcemet2: "Refresh with authentics and delicious drinks! Ole Fruite Aguas Frescas!🍹",
-        announcemet3: "Real food. Real flavour. Real Mexican",
+        announcemet3: "Real food. Real flavour. Real Mexican!!",
         announcemet4: "Come and try our delicious Mexican food! 🌮🌯"
     },
     es: {
-        intro: "Cocina Mexicana Fresca del Suroeste de los Estados Unidos",
+        intro: "Deliciosa comida mexicana desde 1982 ¡Haz tu pedido y recógelo!",
         history: "Lo que comenzó como un pequeño restaurante independiente se ha transformado en un popular negocio familiar. Nico’s fue fundado por Nicolás Morán Carreón en San Diego, y en 1993, su hermano Prieto abrió el primer Nico’s en Arizona. Hoy en día, hay 23 sucursales repartidas entre San Diego y Arizona. En 2023, la primera ubicación internacional de Nico’s abrió sus puertas en Eindhoven. Todas las sucursales son administradas por los hijos y nietos de Nicolás y sus hermanos y hermanas. Y el negocio sigue creciendo; pero no te equivoques, Nico’s no es una cadena ni una franquicia (al menos por ahora).",
         follow: "Siguenos",
         historyTitle: "Nuestra Historia",
@@ -24,7 +24,7 @@ const translation = {
         galleryTitle: "Galeria",
         announcemet1: "El desayuno se sirve TODO EL DIA! TODOS LOS DIAS! ☀️🍳",
         announcemet2: "Refrescate con bebidas auténticas y deliciosas! ¡Ole Fruite Aguas Frescas!🍹",
-        announcemet3: "Comida real. Sabor real. Mexico real!",
+        announcemet3: "Comida real. Sabor real. Mexico real!!",
         announcemet4: "Ven y prueba nuestras deliciciosa Comida Mexicana! 🌮🌯"
     }
 }
