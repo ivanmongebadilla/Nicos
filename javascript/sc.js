@@ -9,7 +9,11 @@ const translation = {
         follow: "Follow Us",
         historyTitle: "Our History",
         locationTitle: "Our Locations",
-        galleryTitle: "Gallery"
+        galleryTitle: "Gallery",
+        annoucment1: "Breakfast is serve ALL DAY, EVERY DAYS!☀️🍳",
+        announcemet2: "Refresh with authentics and delicious drinks! Ole Fruite Aguas Frescas!🍹",
+        announcemet3: "Real food. Real flavour. Real Mexican",
+        announcemet4: "Come and try our delicious Mexican food! 🌮🌯"
     },
     es: {
         intro: "Cocina Mexicana Fresca del Suroeste de los Estados Unidos",
@@ -17,7 +21,11 @@ const translation = {
         follow: "Siguenos",
         historyTitle: "Nuestra Historia",
         locationTitle: "Ubicaciones",
-        galleryTitle: "Galeria"
+        galleryTitle: "Galeria",
+        announcemet1: "El desayuno se sirve TODO EL DIA! TODOS LOS DIAS! ☀️🍳",
+        announcemet2: "Refrescate con bebidas auténticas y deliciosas! ¡Ole Fruite Aguas Frescas!🍹",
+        announcemet3: "Comida real. Sabor real. Mexico real!",
+        announcemet4: "Ven y prueba nuestras deliciciosa Comida Mexicana! 🌮🌯"
     }
 }
 
@@ -32,6 +40,10 @@ function changeLanguage(lang) {
     document.getElementById("historytitle").innerText = translation[lang].historyTitle;
     document.getElementById("locationstitle").innerText = translation[lang].locationTitle;
     document.getElementById("gallerytitle").innerText = translation[lang].galleryTitle;
+    document.getElementById("announcemet1").innerText = translation[lang].announcemet1;
+    document.getElementById("announcemet2").innerText = translation[lang].announcemet2;
+    document.getElementById("announcemet3").innerText = translation[lang].announcemet3;
+    document.getElementById("announcemet4").innerText = translation[lang].announcemet4;
 }
 
 setInterval(() => {
